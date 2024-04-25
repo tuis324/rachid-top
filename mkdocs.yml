@@ -1,0 +1,75 @@
+site_name: Rachid chr
+theme:
+  name: material
+
+  features:
+    - header.autohide
+     - navigation.footer
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+  palette:
+      
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+ 
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  nav:
+  - Section:
+    - section/index.md 
+    - Home: section/Home.md
+    - About: Section/About.md
+    - Contact: section/Contact.md
+  
+  
+    font:
+    text: Roboto
+
+    language: en  
+
+  plugins:
+   - blog:
+      blog_toc: true
+      post_dir: "{blog}/articles"
+      post_date_format: full
+      post_url_format: "{date}/{slug}"
+
+   - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
+
+  extra:
+   social:
+    - icon: fontawesome/brands/github 
+      link: https://fosstodon.org/@squidfunk   
+    - icon: fontawesome/brands/x-twitter
+      link: https://fosstodon.org/@squidfunk 
+    - icon: fontawesome/brands/facebook
+      link: https://fosstodon.org/@squidfunk     
+
+  copyright: Copyright &copy; 2024 Chraibi Rachid  
+
+
+  
+
+      
+
